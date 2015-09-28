@@ -1,0 +1,36 @@
+{
+  "name": "tmtd-homepage",
+  "version": "0.0.0",
+  "description": "Homepage for TakeMeToDenmark.com",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ilja Panic <hello@iljapanic.me>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "browser-sync": "^2.9.6",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-combine-media-queries": "^0.2.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-order": "^1.1.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.1",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.5",
+    "require-dir": "^0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TakeMeToDenmark/homepage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TakeMeToDenmark/homepage/issues"
+  },
+  "homepage": "http://takemetodenmark.com"
+}
