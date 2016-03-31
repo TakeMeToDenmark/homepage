@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+
+	<!-- Browser quirks -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1,minimum-scale=1,width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- Meta -->
+  <meta name="title" content="{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}" />
+
+	{% if meta.description %}
+	<meta name="description" content="{{ meta.description }}" />
+	{% endif %}
+
+	{% if meta.robots %}
+	<meta name="robots" content="{{ meta.robots }}">
+	{% endif %}
+
+	{% if meta.keywords %}
+  <meta name="keywords" content="{{ meta.keywords }}" />
+	{% endif %}
+
+	<!-- Open Graph -->
+  <meta property="og:title" content="{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="{{ config.uploads_folder }}{% if meta.hero %}{{ meta.hero }}{% endif %}"/>
+  <meta property="og:site_name" content="Take Me To Denmark"/>
+  <meta property="og:description" content="{% if meta.description %}{{ meta.description }}{% endif %}"/>
+
+	<!-- favicons -->
+	<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+	<link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="{{ theme_url }}/build/css/page.css" />
+	<link href="https://fontastic.s3.amazonaws.com/acQ9E6tzR3cJTSQPUVji2o/icons.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+
+	<!-- TypeKit -->
+	<script type="text/javascript" src="//use.typekit.net/grg3xzn.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!-- Segment.io -->
+	<script type="text/javascript">
+		window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+		window.analytics.load("tdsffmjl87");
+		window.analytics.page();
+	</script>
+</head>
+
+<body>
+
+	<header id="nav-bar">
+
+		<div id="logo-container">
+			<h1><a href="{{ base_url }}" title="Go to homepage">Take Me<br />To Denmark</a></h1>
+		</div>
+
+		<nav id="main-nav" class="nav-collapse" role="navigation">
+				<ul class="menu">
+					<li><a href="{{ base_url }}">Home</a></li>
+					<li><a href="{{ base_url }}/about">About</a></li>
+					<li class="active">Get Involved</li>
+					<li><a href="https://www.facebook.com/TakeMeToDenmark" title="Like TakeMeToDenmark.com on Facebook" target="_blank" class="facebook">Facebook</a></li>
+					<li><a href="https://twitter.com/TakeMeToDenmark" title="Follow TakeMeToDenmark.com on Twitter" target="_blank" class="twitter">Twitter</a></li>
+				</ul>
+		</nav>
+
+	</header>
+
+
+	<section class="main-content">
+
+		<article class="page wrapper">
+			<h2 id="{{ meta.hook }}">{{ meta.title }}</h2>
+			{{ content }}
+		</article>
+
+		<article class="get-involved-listings wrapper">
+
+			<div class="get-involved-position">
+				<h3><i class="icon-writing"></i>Upcoming Shakespaers</h3>
+				<p>Do you like expressing yourself through words? You enjoy writing stories, articles or poems in your spare time? You never feared writing essays in school? Or you simply have a story about Denmark you would like to share with the world?</p>
+				<p>Perfect! You are going to write for the website. For now, it all goes onto the main page. But there is a blog-like subsite in the making; with more casual style and loose structure to fit anything that doesn't need an entire section on the main site. Things like – personal stories, funny anecdotes, reportage from various events, reviews of books/movies and whatnot – all go here.</p>
+				<p>You can write for the website regularly, occassionaly, or only when you feel really inspired. It‘s entirely up to you.</p>
+
+			</div>
+
+			<div class="get-involved-position">
+				<h3><i class="icon-marketing"></i>Internet surfers &amp; social media freaks</h3>
+				<p>Do you love procrastinating on reddit all day? You never miss out on the most interesting and entertaining articles, news, blog posts and YouTube videos? Do you spend every waking minute scrolling through your News Feed, putting quirky images on Instagram or maybe even tweet here and there?</p>
+				<p>Great! Now you won‘t have to feel guilty about wasting so much time online and finally put all that time and effort to some use. One of the roles is researching and curating material to be posted and used on the website. Second major role is running the social networks, mostly posting on Facebook, Instagram and Twitter.</p>
+				<p>You can choose to do only one task or all of them. Whatever suits you.</p>
+			</div>
+
+		</article>
+
+		<article class="get-involved-listings wrapper">
+
+			<div class="get-involved-position">
+				<h3><i class="icon-creatives"></i>Creatives of all kinds, colors &amp; sizes</h3>
+				<p>Are you an avid collector of danish vintage stamps? Do you love taking pictures or videos? Are you always up do date with the music scene? Do you always know what's currently playing in theatre and when all the gallery openings are? Do you like pushing pixels in Photoshop or code in the middle of the night while drinking unhealthy amounts of coffee?</p>
+				<p>It doesn't matter how you choose to express your creative self. If you had a hobby for years or have strong interest in a certain topic this is your chance to put it to good use, make a name for yourself and help others at the same time. The project is open to any form of collaboration and would love to help to promote an interesting project of yours.</p>
+
+			</div>
+
+			<div class="get-involved-position">
+				<h3><i class="icon-editorial"></i>Editorial</h3>
+				<p>Are you seriously intrigued with the idea behind the website? Do you believe that it has a potential to help a lot of people? Would you like to work more closely on the project and help define its future?</p>
+				<p>You would become a member of a group of people who work on the website regularly. It involves things like occasional in-person meetings and brainstorming sessions, organizing events, long-term plans discussions and casual meet ups over beers and crackers.</p>
+				<p>This is a great opportunity to become a big part of the future development of TakeMeToDenmark.com and help a lot of people in their pursuits in Denmark. Also, it’s a nice little addition to your CV.</p>
+			</div>
+
+		</article>
+
+		<article class="get-involved-contact wrapper">
+			<button class="btn-large"><a href="mailto:hello@takemetodenmark.com?subject=I want to help out with the website!" target="_blank">Get in touch</a></button>
+			<p>It doesn't matter if you are not exactly sure how would you like to contribute. If you are interested in helping out than just get in touch and we‘ll take it from there. Cheers!</p>
+		</article>
+
+	</section>
+
+	<section class="call-to-action">
+
+		<aside id="newsletter-signup">
+			<h4>Join the mailing list to be the first to know about major updates &amp; announcements.</h4>
+			<form action="http://takemetodenmark.us7.list-manage.com/subscribe/post?u=47e016713a7f17a5f808d38ae&amp;id=0384d1fdf1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required>
+				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				<div style="position: absolute; left: -5000px;"><input type="text" name="b_47e016713a7f17a5f808d38ae_0384d1fdf1" tabindex="-1" value=""></div>
+				<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+			</form>
+		</aside>
+
+		<aside id="vote-prompt">
+			<h4>It is up to you to decide what is going to be on the website in the future.</h4>
+			<button><a class="typeform-share link" href="https://iljapanic.typeform.com/to/ykMLFM" data-mode="1" target="_blank">Answer Survey</a></button>
+			<button><a href="mailto:hello@takemetodenmark.com" target="_blank">Send suggestion</a></button>
+			<script>
+				(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()
+			</script>
+		</aside>
+
+	</section>
+
+
+	<footer id="colophon">
+
+		<div id="footer-social-media" class="social-media">
+			<ul>
+				<li><a href="https://www.facebook.com/TakeMeToDenmark" title="Like TakeMeToDenmark.com on Facebook" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
+				<li><a href="https://twitter.com/TakeMeToDenmark" title="Follow TakeMeToDenmark.com on Twitter" target="_blank" class="twitter"><i class="icon-twitter"></i></a></li>
+				<li><a href="mailto:hello@takemetodenmark.com" title="Send us an email" target="_blank" class="email"><i class="icon-email"></i></a></li>
+			</ul>
+		</div>
+		<p>Handmade with <i class="icon-heart"></i> &amp; lots of <i class="icon-coffee"></i> in Copenhagen, Denmark</p>
+		<p id="rights">All rights reserved</p>
+
+	</footer>
+
+
+	<!-- Java script -->
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ theme_url }}/build/js/page.min.js"></script>
+
+</body>
+</html>

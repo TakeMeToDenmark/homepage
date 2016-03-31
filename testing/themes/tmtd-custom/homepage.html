@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+
+	<!-- Browser quirks -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1,minimum-scale=1,width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- Meta -->
+  <meta name="title" content="{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}" />
+
+	{% if meta.description %}
+	<meta name="description" content="{{ meta.description }}" />
+	{% endif %}
+
+	{% if meta.robots %}
+	<meta name="robots" content="{{ meta.robots }}">
+	{% endif %}
+
+	{% if meta.keywords %}
+  <meta name="keywords" content="{{ meta.keywords }}" />
+	{% endif %}
+
+	<!-- Open Graph -->
+  <meta property="og:title" content="{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="{{ config.uploads_folder }}{% if meta.hero %}{{ meta.hero }}{% endif %}"/>
+  <meta property="og:site_name" content="Take Me To Denmark"/>
+  <meta property="og:description" content="{% if meta.description %}{{ meta.description }}{% endif %}"/>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="{{ theme_url }}/build/css/home.css" />
+
+	<!--[if lt IE 9]>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+
+	<!-- TypeKit -->
+	<script type="text/javascript" src="//use.typekit.net/grg3xzn.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!-- Segment.io -->
+	<script type="text/javascript">
+		window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+		window.analytics.load("tdsffmjl87");
+		window.analytics.page();
+	</script>
+</head>
+
+<body>
+
+	<header id="nav-bar">
+		<div id="logo-container">
+			<h1><a href="{{ base_url }}" title="Link to homepage">Take Me<br />To Denmark</a></h1>
+		</div>
+
+		<nav id="main-nav" class="nav-collapse" role="navigation">
+				<ul class="menu">
+					<li class="active">Home</li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Table of Contents</a></li>
+					<li><a href="#">Get Involved</a></li>
+				</ul>
+		</nav>
+
+
+	</header>
+
+	<section id="cover" style="background-image:url('{{ config.uploads_folder }}{% if meta.hero %}{{ meta.hero }}{% endif %}');">
+
+		<nav id="category-nav">
+			<ul>
+				<li>
+					<a href="study">
+						<i class="icon-study"></i>
+						<span>Study</span>
+					</a>
+				</li>
+				<li>
+					<a href="/housing">
+						<i class="icon-housing"></i>
+						<span>Housing</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-paperwork"></i>
+						<span>Paperwork</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<article>
+			{{ content }}
+		</article>
+
+	</section>
+
+	<section class="call-to-action">
+
+		<aside id="newsletter-signup">
+			<h4>Join the mailing list to be the first to know about major updates &amp; announcements.</h4>
+			<form action="http://takemetodenmark.us7.list-manage.com/subscribe/post?u=47e016713a7f17a5f808d38ae&amp;id=0384d1fdf1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required>
+				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				<div style="position: absolute; left: -5000px;"><input type="text" name="b_47e016713a7f17a5f808d38ae_0384d1fdf1" tabindex="-1" value=""></div>
+				<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+			</form>
+		</aside>
+
+		<aside id="vote-prompt">
+			<h4>It is up to you to decide what is going to be on the website in the future.</h4>
+			<button data-toggle="modal" data-target="#vote-modal">Answer Survey</button>
+			<button data-toggle="modal" data-target="#suggestion-modal">Send suggestion</button>
+		</aside>
+
+	</section>
+
+
+	<section id="dashboard">
+		<article id="weather" class="widget">
+			<header><h3><i class="icon-weather"></i>Weather</h3></header>
+			<h4>Today</h3>
+			<div id="weather-current"></div>
+
+			<h4>Forecast</h4>
+			<div id="weather-forecast"></div>
+			<a href="https://weather.yahoo.com/denmark/hovedstaden/copenhagen-554890/" title="Go to Yahoo.com" target="_blank"><img src="{{ config.uploads_folder }}vendor-icons/yahoo-attribution.png" alt="Weather powered by Yahoo" /></a>
+			<aside class="see-also">
+				<span>See also:</span>
+				<ul>
+					<li>
+						<a href="http://www.yr.no/place/Denmark/" title="Go to yr.no" target="_blank">
+							<img src="{{ config.uploads_folder }}vendor-icons/yr.png" alt="yr.no" />yr.no
+						</a>
+					</li>
+					<li>
+						<a href="http://www.dmi.dk/en/vejr/" title="Go to dmi.dk" target="_blank">
+								<img src="{{ config.uploads_folder }}vendor-icons/dmi.png" alt="dmi.dk" />dmi.dk
+						</a>
+					</li>
+				</ul>
+			</aside>
+		</article>
+
+		<article id="news" class="widget">
+			<header><h3><i class="icon-news"></i>News</h3></header>
+			<div id="news-feed"></div>
+			<span class="generic-attribution">Fetched from <a href="https://news.google.com/news?hl=en&gl=dk&q=%22Denmark%22+OR+%22Copenhagen%22&ie=UTF-8" title="Go to Google News" target="_blank">Google News</a></span>
+			<aside class="see-also">
+				<span>See also:</span>
+				<ul>
+					<li>
+						<a href="http://cphpost.dk/" title="Go to cphpost.dk" target="_blank">
+							<img src="{{ config.uploads_folder }}vendor-icons/cphpost.png" alt="cphpost.dk" />cphpost.dk
+						</a>
+					</li>
+				</ul>
+			</aside>
+		</article>
+
+		<article id="concerts" class="widget">
+			<header><h3><i class="icon-music"></i>Concerts</h3></header>
+			<ul id="songkick-concerts"></ul>
+			<a href="http://www.songkick.com/metro_areas/28617-denmark-copenhagen" title="Go to Songkick.com" target="_blank"><img src="{{ config.uploads_folder }}vendor-icons/songkick-attribution.png" alt="Concerts powered by Songkick" /></a>
+		</article>
+
+	</section>
+
+	<aside id="disclaimer">
+		<h3>Disclaimer</h3>
+		<p>This website is not an official guide of any sorts. The advice you will find here is based mostly on personal experience and broswing the Web. Some information may be missing or not be 100% accurate. Rely on your common sense. This website is not responsible for any life-disruptive decisions based on something you found on this site. If you do find a mistake, please <a href="mailto:hello@takemetodenmark.com?subject=I found a mistake on your website!" target="_blank">send us a message</a>.</p>
+	</aside>
+
+	<footer id="colophon">
+
+		<div id="footer-social-media">
+			<ul>
+				<li><a href="https://www.facebook.com/TakeMeToDenmark" title="Like TakeMeToDenmark.com on Facebook" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
+				<li><a href="https://twitter.com/TakeMeToDenmark" title="Follow TakeMeToDenmark.com on Twitter" target="_blank" class="twitter"><i class="icon-twitter"></i></a></li>
+				<li><a href="mailto:hello@takemetodenmark.com" title="Send us an email" target="_blank" class="email"><i class="icon-email"></i></a></li>
+			</ul>
+		</div>
+		<p>Handmade with <i class="icon-heart"></i> &amp; lots of <i class="icon-coffee"></i> in Copenhagen, Denmark</p>
+		<p id="rights">All rights reserved</p>
+
+	</footer>
+
+	<!-- Vote modal -->
+	<div class="modal fade" id="vote-modal" tabindex="-1" role="dialog" aria-labelledby="vote-modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="vote-modal-label">Survey</h4>
+				</div>
+				<div class="modal-body">
+					<p>We appreciate your interest in helping us build a better experience for you and the others. Just go ahead and fill out this very short questionnaire.</p>
+					<div id="wufoo-z1ckxpwf16snxnb" class="wufoo-form">
+						Fill out my <a href="https://iljapanic.wufoo.com/forms/z1ckxpwf16snxnb">online form</a>.
+					</div>
+					<script type="text/javascript">var z1ckxpwf16snxnb;(function(d, t) {
+						var s = d.createElement(t), options = {
+							'userName':'iljapanic',
+							'formHash':'z1ckxpwf16snxnb',
+							'autoResize':true,
+							'height':'1515',
+							'async':true,
+							'host':'wufoo.com',
+							'header':'hide',
+							'ssl':true};
+							s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+							s.onload = s.onreadystatechange = function() {
+								var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+								try { z1ckxpwf16snxnb = new WufooForm();z1ckxpwf16snxnb.initialize(options);z1ckxpwf16snxnb.display(); } catch (e) {}};
+								var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+							})(document, 'script');
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Suggestion modal -->
+
+	<div class="modal fade" id="suggestion-modal" tabindex="-1" role="dialog" aria-labelledby="suggestion-modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span>&times;</span></button>
+					<h4 class="modal-title" id="suggestion-modal-label">Send Suggestion</h4>
+				</div>
+				<div class="modal-body">
+					COMING SOON
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Java script -->
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="{{ theme_url }}/build/js/home.min.js"></script>
+
+</body>
+</html>
