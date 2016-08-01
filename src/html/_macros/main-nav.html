@@ -1,0 +1,31 @@
+{% macro active(activePage) %}
+<div class="logo">
+  <a class="{%if activePage == 'home' %}active{% endif %}" href="/">
+    <span>Take Me To Denmark</span>
+  </a>
+</div>
+
+<nav class="main-nav" role="navigation">
+  <ul>
+    <li class="{%if activePage == 'study' %}active{% endif %}">
+      <a href="/study" class="study">
+        <img src="/img/icons/study.svg" alt="Study icon" />
+        <span>Study</span>
+      </a>
+    </li>
+    <li class="{%if activePage == 'housing' %}active{% endif %}">
+      <a href="/housing">
+        <img src="/img/icons/housing.svg" alt="Housing icon" />
+        <span>Housing</span>
+      </a>
+    </li>
+    <li class="{%if activePage == 'paperwork' %}active{% endif %}">
+      <a href="/paperwork">
+        <img src="/img/icons/paperwork.svg" alt="Paperwork icon" />
+        <span>Paperwork</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+{% endmacro %}

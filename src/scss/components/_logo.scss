@@ -1,0 +1,15 @@
+.logo {
+
+  margin-top: $spacing/2;
+  text-align: center;
+
+  a {
+    color: $primary-dark;
+    font-family: $heading-font;
+    font-size: $font-size--large;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

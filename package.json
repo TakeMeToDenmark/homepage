@@ -1,0 +1,47 @@
+{
+  "name": "tmtd",
+  "version": "1.1.0",
+  "description": "Take Me To Denmark homepage",
+  "author": "Ilja Panic <hello@iljapanic.me>",
+  "license": "",
+  "contributors": [
+    {
+      "name": "Ilja Panic",
+      "email": "hello@iljapanic.me"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TakeMeToDenmark/homepage"
+  },
+  "standard": {
+    "globals": [
+      "$",
+      "Modernizr"
+    ]
+  },
+  "devDependencies": {
+    "browser-sync": "*",
+    "del": "*",
+    "fs": "0.0.2",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cssnano": "*",
+    "gulp-data": "^1.2.1",
+    "gulp-front-matter": "^1.3.0",
+    "gulp-group-css-media-queries": "*",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-imagemin": "*",
+    "gulp-markdown": "^1.2.0",
+    "gulp-notify": "*",
+    "gulp-nunjucks-render": "*",
+    "gulp-sass": "*",
+    "gulp-sequence": "^0.4.5",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "gulp-watch": "^4.3.8",
+    "path": "^0.12.7",
+    "require-dir": "^0.3.0"
+  }
+}

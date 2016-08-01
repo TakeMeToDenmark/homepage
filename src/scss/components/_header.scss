@@ -1,0 +1,11 @@
+.header {
+  margin: 0 auto;
+  max-width: $wrapper;
+  padding: $spacing 2rem $spacing/2 2rem;
+}
+
+@media ($media-medium) {
+  .header {
+    text-align: center;
+  }
+}
