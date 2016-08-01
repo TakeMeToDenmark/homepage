@@ -34,7 +34,7 @@
 	<!-- favicons -->
 	<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
 	<link rel="shortcut icon" type="image/png" href="/favicon.png" />
-	
+
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="{{ theme_url }}/build/css/home.css" />
 	<link href="https://fontastic.s3.amazonaws.com/acQ9E6tzR3cJTSQPUVji2o/icons.css" rel="stylesheet">
@@ -56,22 +56,14 @@
 
 <body>
 
-	<header id="nav-bar">
-		<div id="logo-container">
-			<h1><a href="{{ base_url }}" title="Link to homepage">Take Me<br />To Denmark</a></h1>
-		</div>
-
-		<nav id="main-nav" class="nav-collapse" role="navigation">
-				<ul class="menu">
-					<li class="active">Home</li>
-					<li><a href="https://www.facebook.com/TakeMeToDenmark" title="Like TakeMeToDenmark.com on Facebook" target="_blank" class="facebook">Facebook</a></li>
-					<li><a href="https://twitter.com/TakeMeToDenmark" title="Follow TakeMeToDenmark.com on Twitter" target="_blank" class="twitter">Twitter</a></li>
-				</ul>
-		</nav>
-	</header>
-
 	<section class="cover" style="background-image:url('{{ config.uploads_folder }}{% if meta.hero %}{{ meta.hero }}{% endif %}');">
 
+		<header id="nav-bar">
+			<div id="logo-container">
+				<h1><a href="{{ base_url }}" title="Link to homepage">Take Me<br />To Denmark</a></h1>
+			</div>
+		</header>
+		
 		<nav class="category-nav">
 			<ul>
 				<li>

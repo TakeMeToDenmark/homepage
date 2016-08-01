@@ -50,7 +50,7 @@
 
 
 <body>
-	<header id="nav-bar">
+	<!-- <header id="nav-bar">
 		<div id="logo-container">
 			<h1><a href="../">Take Me<br />To Denmark</a></h1>
 		</div>
@@ -63,7 +63,7 @@
 					<li><a href="#">Get Involved</a></li>
 				</ul>
 		</nav>
-	</header>
+	</header> -->
 
 	<section id="cover" style="background-image:url('../build/images/cover-study.jpg');">
 
