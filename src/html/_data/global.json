@@ -10,5 +10,26 @@
     "keywords": "Take Me To Denmark, Denmark guide, Denmark, living in Denmark, life in Denmark",
     "description": "",
     "date": "2014/06/24"
+  },
+
+  "study": {
+    "title": "Study in Denmark",
+    "keywords": "",
+    "description": "How to apply for university in Denmark",
+    "date": "2014/06/24"
+  },
+
+  "housing": {
+    "title": "Housing in Denmark",
+    "keywords": "housing in Denmark, finding a place to live Denmark, find apartment Denmark, find apartment Copenhagen",
+    "description": "Tips, guides and links for finding housing in Denmark",
+    "date": "2014/06/24"
+  },
+
+  "paperwork": {
+    "title": "Paperwork when moving to Denmark",
+    "keywords": "",
+    "description": "Necessary legal procedures when moving to Denmark",
+    "date": "2014/06/24"
   }
 }

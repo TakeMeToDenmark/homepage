@@ -57,7 +57,7 @@ Styleguide 1.1
 // columns
 .grid > *{
   flex: 1;
-  flex-grow: 4;
+  flex-grow: 5;
   padding-left: 1rem;
   padding-right: 1rem;
 
@@ -70,7 +70,7 @@ Styleguide 1.1
   }
 
   &.column--light{
-    flex-grow: 1;
+    flex-grow: 2;
   }
 
   &.column--heavy{

@@ -23,11 +23,13 @@
 	<!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
-
 	<div class="hero hero--frontpage">
+
 			<header class="header clearfix" role="banner">
-			    {% import '_macros/main-nav.html' as nav %}
-					{{nav.active('home')}}
+				<div class="wrapper">
+  				{% import '_macros/main-nav.html' as nav %}
+  				{{nav.active('home')}}
+  			</div>
 			</header>
 
 			<main class="main" role="main">
@@ -39,8 +41,6 @@
 			</main>
 
 	</div>
-
-
 
 	{% include "_shared/footer.html" %}
 

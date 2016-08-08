@@ -22,9 +22,10 @@
     color: $gray5;
     display: block;
     font-family: $heading-font;
+    font-size: 1rem;
     font-weight: 300;
     letter-spacing: 1px;
-    padding: $spacing/6 $spacing $spacing/4 $spacing/2;
+    padding: $spacing/6 $spacing/2 $spacing/6 $spacing/4;
     text-align: center;
     text-transform: uppercase;
 
@@ -35,7 +36,7 @@
 
     img {
       display: inline-block;
-      max-width: 36px;
+      max-width: 24px;
       margin-right: $spacing/4;
       text-align: center;
       vertical-align: middle;
@@ -51,14 +52,23 @@
 
 }
 
-@media ($media-medium) {
-  li {
-    display: inline-block;
-    margin-right: $spacing;
-    text-align: center;
 
-    &:last-of-type {
-      margin-right: 0;
+
+@media ($media-medium) {
+
+  .main-nav {
+    margin-top: $spacing*2;
+    text-align: left;
+
+    li {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: $spacing;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
   }
+
 }

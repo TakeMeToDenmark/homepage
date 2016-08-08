@@ -1,14 +1,15 @@
 {% macro active(activePage) %}
-<div class="logo">
-  <a class="{%if activePage == 'home' %}active{% endif %}" href="/">
-    <span>Take Me To Denmark</span>
-  </a>
-</div>
-
 <nav class="main-nav" role="navigation">
   <ul>
+    <li class="{%if activePage == 'home' %}active{% endif %}">
+      <a href="/">
+        <img src="/img/icons/dashboard.svg" alt="Dashboard icon" />
+        <span>Dashboard</span>
+      </a>
+    </li>
+
     <li class="{%if activePage == 'study' %}active{% endif %}">
-      <a href="/study" class="study">
+      <a href="/study">
         <img src="/img/icons/study.svg" alt="Study icon" />
         <span>Study</span>
       </a>
@@ -27,5 +28,4 @@
     </li>
   </ul>
 </nav>
-
 {% endmacro %}

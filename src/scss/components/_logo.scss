@@ -6,10 +6,16 @@
   a {
     color: $primary-dark;
     font-family: $heading-font;
-    font-size: $font-size--large;
-    font-weight: 700;
-    letter-spacing: 2px;
+    // font-size: $font-size--small;
+    // font-weight: 500;
+    letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
+  }
+}
+
+@media ($media-medium) {
+  .logo {
+    text-align: left;
   }
 }
