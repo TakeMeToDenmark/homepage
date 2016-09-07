@@ -15,6 +15,9 @@
 
 	{% include "_shared/head.html" %}
 
+  <!-- weather icons -->
+  <link rel="stylesheet" href="/assets/css/weather-icons.css">
+
 
 </head>
 
@@ -24,28 +27,52 @@
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 	<div class="hero hero--frontpage">
+		<header class="header clearfix" role="banner">
+			<div class="wrapper">
+				{% import '_macros/main-nav.html' as nav %}
+				{{nav.active('home')}}
+			</div>
+		</header>
 
-			<header class="header clearfix" role="banner">
-				<div class="wrapper">
-  				{% import '_macros/main-nav.html' as nav %}
-  				{{nav.active('home')}}
-  			</div>
-			</header>
+		<main class="main" role="main">
+			<div class="wrapper">
+				<article class="intro">
+					{% include "_text/frontpage/intro.html" %}
+				</article>
+			</div>
 
-			<main class="main" role="main">
-				<div class="wrapper">
-					<article class="intro">
-						{% include "_text/frontpage/intro.html" %}
-					</article>
-				</div>
-			</main>
-
+		</main>
 	</div>
+
+  <div class="wrapper-large">
+    <div class="dashboard">
+
+      <section class="section">
+        <h2 class="section__title">Weather in Copenhagen</h2>
+        <div id="weather" class="weather">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">News from Denmark</h2>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">Concerts in Copenhagen</h2>
+        </div>
+      </section>
+
+    </div>
+  </div>
 
 	{% include "_shared/footer.html" %}
 
 	<!-- javascript global -->
 	{% include "_shared/js-global.html" %}
+  <script src="/assets/js/vendor/jquery.simpleWeather.min.js"></script>
+  <script src="/assets/js/vendor/moment.min.js"></script>
+  <script src="/assets/js/dashboard.js"></script>
 
 
 </body>

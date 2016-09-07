@@ -6,7 +6,8 @@ var gulp = require('gulp')
 var browserSyncTask = function () {
   browserSync.init({
     server: {
-      baseDir: config.tasks.browserSync.server.baseDir
+      baseDir: config.tasks.browserSync.server.baseDir,
+      proxy: 'tmtd.dev'
     }
   })
 }

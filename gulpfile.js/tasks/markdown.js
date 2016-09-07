@@ -1,6 +1,7 @@
 var config = require('../config')
 
 var browserSync = require('browser-sync')
+var del = require('del')
 var frontMatter = require('gulp-front-matter')
 var gulp = require('gulp')
 var handleErrors = require('../lib/handleErrors')
@@ -12,7 +13,7 @@ var paths = {
   dest: path.join(config.root.src, config.tasks.html.src, config.tasks.markdown.dest)
 }
 
-var markdownTask = function () {
+var markdownTask = function (cb) {
   return gulp.src(paths.src)
     .pipe(frontMatter({
       property: 'frontMatter',

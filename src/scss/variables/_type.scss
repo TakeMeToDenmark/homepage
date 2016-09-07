@@ -2,13 +2,13 @@
 //
 // Styleguide
 
-$base-font:       'Adelle W01', 'Avenir W01', 'Avenir Next','Helvetica Neue','Segoe UI', 'Verdana', sans-serif !default;
-$heading-font:    'Adelle Sans W01', 'Leitura News W01', serif;
-$monospace-font:  'Consolas', 'Monaco', 'Courier New', monospace !default;
+$base-font: 'Adelle Sans W01', 'Avenir W01', 'Avenir Next','Helvetica Neue','Segoe UI', 'Verdana', sans-serif !default;
+$heading-font: 'Adelle W01', 'Leitura News W01', serif;
+$monospace-font: 'Consolas', 'Monaco', 'Courier New', monospace !default;
 
-$heading:         $heading-font !default;
-$body:            $base-font !default;
-$monospace:       $monospace-font !default;
+$heading: $heading-font !default;
+$body: $base-font !default;
+$monospace: $monospace-font !default;
 
 $font-size: 1.4rem !default;
 $line-height: 2.4rem !default;

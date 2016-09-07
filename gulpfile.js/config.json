@@ -14,11 +14,16 @@
 
     "css": {
       "src": "scss",
-      "dest": "css",
+      "dest": "assets/css",
       "autoprefixer": {
         "browsers": ["last 3 version"]
       },
       "extensions": ["sass", "scss", "css"]
+    },
+
+    "fonts" : {
+      "src": "fonts",
+      "dest": "assets/fonts"
     },
 
     "html": {
@@ -34,7 +39,7 @@
 
     "images": {
       "src": "images",
-      "dest": "img",
+      "dest": "assets/img",
       "extensions": ["jpg", "png", "svg", "gif", "jpeg"]
     },
 
@@ -46,7 +51,7 @@
 
     "scripts": {
       "src": "javascript",
-      "dest": "js",
+      "dest": "assets/js",
       "extensions": ["js","jsx"]
     }
   }

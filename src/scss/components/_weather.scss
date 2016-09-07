@@ -1,0 +1,124 @@
+.weather {
+  margin-top: $spacing/2;
+}
+
+.weather__title {
+  font-size: 1.5rem;
+  margin-top: $spacing*1.5;
+  padding: 0;
+  text-transform: uppercase;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.weather__current {
+
+  margin-top: $spacing*1.5;
+
+  .current__icon i {
+    font-size: 10rem;
+    margin-right: $spacing/2;
+    opacity: 0.9;
+    vertical-align: middle;
+  }
+
+  .current__temp {
+    color: $gray2;
+    font-size: 5rem;
+    font-weight: 400;
+    vertical-align: middle;
+  }
+
+  .sun {
+    color: $gray2;
+    font-size: 2.2rem;
+    font-weight: 200;
+    margin-top: $spacing*0.75;
+  }
+
+  .sun__rise,
+  .sun__set {
+    margin: auto $spacing;
+    vertical-align: middle;
+    i {
+      font-size: 3.5rem;
+      margin-right: $spacing/3;
+      vertical-align: middle;
+    }
+  }
+
+  .sun__rise i {
+    color: $sunrise;
+  }
+
+  .sun__set i {
+    color: $sunset;
+  }
+
+}
+
+.weather__forecast {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: $spacing/2;
+
+  .day {
+    margin-top: $spacing*2;
+    text-align: center;
+    width: percentage(1/5);
+
+    span {
+      display: block;
+    }
+  }
+
+  .day__day {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: $spacing/2;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .day__date {
+    font-size: 1.1rem;
+    margin-top: $spacing/8;
+    line-height: 1;
+  }
+
+  .day__high {
+    color: $hot;
+    font-weight: 400;
+  }
+
+  .day__low {
+    color: $cold;
+    font-weight: 400;
+  }
+
+  .day__icon i {
+    font-size: 3rem;
+    margin: $spacing/2 auto;
+    opacity: 0.75;
+  }
+
+}
+
+
+@media ($media-large) {
+
+  .weather__forecast {
+
+    margin-top: $spacing/2;
+
+    .day {
+      margin-top: 0;
+      width: percentage(1/10);
+    }
+  }
+
+
+}
