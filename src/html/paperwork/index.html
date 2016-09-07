@@ -33,15 +33,27 @@
 			</div>
 		</header>
 
-		<main class="main" role="main">
-			<div class="wrapper">
-				<article class="intro">
-					{% include "_text/paperwork/intro.html" %}
-				</article>
-			</div>
-		</main>
+		<div class="wrapper">
+			<article class="intro">
+				{% include "_text/paperwork/intro.html" %}
+			</article>
+		</div>
 
 	</div>
+
+  <main class="main" role="main">
+    <div class="wrapper">
+
+      <article class="article">
+        {% include "_text/paperwork/residence-permit.html" %}
+      </article>
+
+      <article class="article">
+        {% include "_text/paperwork/cpr-number.html" %}
+      </article>
+
+    </div>
+  </main>
 
 
 

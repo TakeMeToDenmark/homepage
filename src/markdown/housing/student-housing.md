@@ -1,12 +1,3 @@
-/*
-Title: Student housing
-Description: Tips, guides and links for finding student housing in Denmark
-Author: Ilja
-Date: 2014/06/24
-Placing: 1
-Hook: student-housing
-Template: article
-*/
 You may be have experienced dorm life in your homecountry. Some of you may have even built an aversion to this kind of living arrangement, regardless of wether you lived in one or not. Rest assured, student housing in Denmark is of a very high standard. In most cases a student apartment means a **1-room studio apartment with your own kitchen corner and bathroom**. Dorms where you share a kitchen, bathroom or both with other students are ussualy arranged so the number of people sharing the same amenities is not very large – making cohabitation smoother and easier.
 
 Student housing is definitely **the cheapest housing option**. Monthly rates start around roughly 1.700 DKK (for a room without kitchen or bathroom) and can go all the way up to 8.000 DKK for a fancy, newly built, 2-3 room apartment with all the necessary amenities. Majority of dorms will offer something in between. In Copenhagen, expect to pay somewhere between **2.500-5.000 DKK** for a standard studio apartment with kitchen corner and small bathroom. Besides being cheaper then other options, dorms also offer a very unique social and cultural dimension, which may be worth considering.

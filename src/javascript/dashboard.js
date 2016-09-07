@@ -19,23 +19,7 @@ $(document).ready(function () {
       woeid: '554890',
       unit: 'c',
       success: function (weather) {
-        html = '<h3 class="weather__title">Current</h3>'
-        html += '<div class="weather__current">' // START current weather
-
-        html += '<div class="current">' // START current
-        html += '<span class="current__icon"><i class="wi wi-yahoo-' + weather.code + '"></i></span>' // current icon
-        html += '<span class="current__temp">' + weather.temp + '&deg;C</span>' // current temperature
-        html += '</div>' // END current
-
-        html += '<div class="sun">' // START sun
-        html += '<span class="sun__rise" title="sunrise time"><i class="wi wi-sunrise"></i>' + ConvertTime(weather.sunrise) + '</span>' // sunrise
-        html += '<span class="sun__set" title="sunset time"><i class="wi wi-sunset"></i>' + ConvertTime(weather.sunset) + '</span>' // sunset
-        html += '</div>' // END sun
-
-        html += '</div>' // END today's weather
-
-        html += '<h3 class="weather__title">Forecast</h3>'
-        html += '<div class="weather__forecast">' // START forecast
+        html = '<div class="weather__forecast">' // START forecast
 
         for (var i = 0; i < weather.forecast.length; i++) {
           html += '<div class="day">' // START day
