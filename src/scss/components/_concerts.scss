@@ -1,0 +1,106 @@
+.concerts {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-left: 0;
+  margin-top: $spacing;
+  padding: 0;
+
+  li {
+    align-items: center;
+    display: flex;
+    margin-bottom: $spacing*1.5;
+    text-align: left;
+    width: percentage(1/2);
+  }
+
+  a {
+    display: block;
+    width: 100%;
+  }
+
+}
+
+.event {
+  align-items: center;
+  display: flex;
+  flex-wrap: flex;
+
+  $event-radius: 0.25rem;
+
+  .event__date {
+    background-color: $gray6;
+    border: 1px solid $gray4;
+    border-radius: $event-radius;
+    text-align: center;
+    transition: all 0.25s ease-in-out;
+    width: percentage(1/5);
+  }
+
+  .event__month {
+    background-color: $primary;
+    border-top-left-radius: $event-radius;
+    border-top-right-radius: $event-radius;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.75;
+    text-transform: uppercase;
+  }
+
+  .event__day {
+    color: $gray1;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: $spacing/12;
+    padding-bottom: $spacing/12;
+  }
+
+  .event__info {
+    color: $gray2;
+    padding-left: $spacing/3;
+    width: percentage(4/5);
+  }
+
+  .event__artist {
+    font-weight: 300;
+    line-height: 1.15;
+    overflow: ellipsis;
+  }
+
+  .event__location {
+    color: $gray3;
+    display: inline-block;
+    font-size: 1.1rem;
+    overflow: ellipsis;
+
+    &:before {
+      bottom: 2px;
+      content: '@';
+      display: inline-block;
+      margin-right: $spacing/16;
+      position: relative;
+    }
+  }
+
+  &:hover {
+    .event__date {
+      background-color: darken($gray6, 3%);
+      border-color: $gray3;
+    }
+  }
+}
+
+@media ($media-large) {
+  .concerts {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      width: percentage(1/4);
+    }
+  }
+}

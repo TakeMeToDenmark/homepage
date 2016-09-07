@@ -1,20 +1,5 @@
 $(document).ready(function () {
   function forecastWidget () {
-    var html = null
-
-    /* CONVERT 12HR TO 24HR */
-    function ConvertTime (t) {
-      // Get your time (using a hard-coded year for parsing purposes)
-      var time = new Date('0001-01-01 ' + t)
-
-      // Output your formatted version (using your DateTime)
-      var formatted = time.getHours() + ':' + ('0' + time.getMinutes()).slice(-2)
-
-      // Return your formatted time
-      return formatted
-    }
-    /* END CONVERT 12HR TO 24HR */
-
     $.simpleWeather({
       woeid: '554890',
       unit: 'c',
@@ -44,6 +29,51 @@ $(document).ready(function () {
       }
     })
   }
-
   forecastWidget()
+
+  function concertsWidget () {
+    var songkickApiKey = "M8RB64s5DjFzhNjB"
+    var songkickResultsCount = 12
+    var songkickMetroAreaCode = 28617
+
+    $.ajax({
+      url: 'http://api.songkick.com/api/3.0/metro_areas/' + songkickMetroAreaCode + '/calendar.json?apikey=' + songkickApiKey + '&per_page=' + songkickResultsCount + '&jsoncallback=?',
+      dataType: 'jsonp',
+      success: function(t) {
+        $.each(t.resultsPage.results.event, function(t, e) {
+          var eventMonth = moment(e.start.date).format('MMM')
+          var eventDay = moment(e.start.date).format('d')
+          var eventUrl = e.uri
+          var eventArtist = e.performance[0].artist.displayName
+          var eventVenue = e.venue.displayName
+
+
+          $('#concerts').append(
+            '<li>'
+            + '<a href="' + eventUrl + '" target="_blank">' // START event link
+
+            + '<div class="event">' // START event
+
+            + '<div class="event__date">' // START date
+            + '<div class="event__month">' + eventMonth + '</div>' // event month
+            + '<div class="event__day">' + eventDay + '</div>' // event day
+            + '</div>' // END date
+
+            + '<div class="event__info">' // START event info
+            + '<div class="event__artist">' + eventArtist + '</div>' // event artist
+            + '<div class="event__location">' + eventVenue + '</div>' // event location
+            + '</div>' // END event info
+
+            + '</div>' // END event
+
+            + '</a>' // END event link
+            + '</li>'
+          )
+          // $("#concerts").append('<li><a href="' + e.uri + '" target="_blank"><div class="concert-date"><span class="concert-month">' + month + '</span><span class="concert-day">' + day + '</span></div><div class="concert-info"><span class="concert-artist">' + e.performance[0].artist.displayName + '</span><span class="concert-venue">@' + e.venue.displayName + "</span></div></a></li>")
+          })
+      }
+    })
+  }
+
+  concertsWidget()
 })
