@@ -1,12 +1,4 @@
-/*
-Title: Buy a place
-Description: Tips on buying apartmens in Denmark
-Author: Ilja
-Date: 2014/06/24
-Placing: 3
-Hook: buy-a-place
-Template: article
-*/
+## Buying a place
 
 It’s common for people in Denmark to buy property. Even students own apartments; often through their parents or by getting a mortage. This is possible thanks to the concept of *Andelsbolig* (“coopearative apartmens”). Technically, you don‘t buy an apartment itself but you buy a share in the cooperative which runs and maintains the apartment building(s).<sup id="andelsbolig-anchor"><a href="#andelsbolig" class="footnote-ref">1&nbsp;andelsbolig</a></sup>
 
@@ -35,7 +27,7 @@ If you have the necessary resources you should consider buying an apartment as o
 </div>
 
  <div class="footnotes">
- 
+
  <div id="andelsbolig" class="footnote">
 <div class="footnote-header"><span class="footnote-counter">1.</span>What is andelsbolig?<a href="#andelsbolig-anchor" rev="footnote" class="footnote-backref">(Back to text &#8617;)</a></div>
 <p>Thanks to Voelven for posting this well-written <a href="https://answers.yahoo.com/question/index?qid=20120806230835AAg87wo" target="_blank">explanation of what is <em>andelsbolig</em> on Yahoo Answers</a>:</p>
@@ -43,8 +35,7 @@ If you have the necessary resources you should consider buying an apartment as o
 <p>Together with the other members you have to agree upon the upkeep of the building, the rules etc. You are also responsible for maintainance. And you are, together with the others, responsible for any debts in the property etc. This means that you have to be very careful and make sure that you buy a "share" in a economically sound "andelsboligforening." If lots of houses/apartments in it are empty, then you will be paying for the upkeep and maintainance of these, and not just the one you are living in, and this can get expensive. Since you are also in a way becoming a member of a collective, it is important that you agree with the existing rules and get along with the other members.</p>
 <p>The original idea behind an "Andelsbolig" was to give the lower middle-class an opportunity for better housing with a lower houserent.</p>
 <p>While not entirely correct, you could say that it lies somewhere between renting and buying. So it has nothing to do with co-habitation as in 2 people sharing an apartment. You are multiple people with each your own apartment/house, sharing the combined property.”</p>
- 
+
  </div>
- 
+
  </div>
-  

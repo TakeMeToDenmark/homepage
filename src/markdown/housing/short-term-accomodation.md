@@ -1,12 +1,4 @@
-/*
-Title: Short-term accomodation
-Description: Tips and links for short-term housing options in Denmark
-Author: Ilja
-Date: 2014/06/29
-Placing: 4
-Hook: short-term-accomodation
-Template: article
-*/
+## Short-term accomodation
 
 Your semester or first day at a new job is about to start and you have trouble finding a place prior to your arrival to Denmark? There are few temporal solutions out there. You can look for a place to live while you are already in Denmark.
 

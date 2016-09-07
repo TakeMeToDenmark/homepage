@@ -1,12 +1,4 @@
-/*
-Title: CPR number
-Description: How to obtain CPR number
-Author: Ilja
-Date: 2014/06/26
-Placing: 2
-Hook: CPR-number
-Template: article
-*/
+## Registering for CPR number
 
 **CPR** (*Central Person Register*) is the number of numbers in Denmark. You need it in order to be able to get a bank account, mobile subscription, to communicate with authorities and so on. It should be one of the first things you take care of after you arrive to Denmark.
 

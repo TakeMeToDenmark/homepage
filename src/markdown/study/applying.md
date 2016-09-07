@@ -1,12 +1,5 @@
-/*
-Title: Applying
-Description: Instructions for applying for an university in Denmark
-Author: Ilja
-Date: 2014/06/24
-Placing: 2
-Hook: applying
-Template: article
-*/
+## Application process
+
 All applications are handled through [**optagelse.dk**](http://www.optagelse.dk/admission/index.html). The website is user-friendly and offers clear instructions for the required steps. Once you create your account and login, there are four major parts of your application:
 
 - *Information about you* - basic personal information (you **CAN‘T** edit this section after you've sent your first application)
@@ -24,4 +17,3 @@ This applies to each and every program individually, meaning 3 programs at 1 sch
 </div>
 
 Most schools don't require physical copies of supporting documentation and are fine with a scanned copy uploaded through *Enclosures* section of the application website; but **double check** that with the website of the school(s) you are applying to.
-

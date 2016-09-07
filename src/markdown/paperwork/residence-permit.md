@@ -1,18 +1,10 @@
-/*
-Title: Residence permit
-Description: How to get a residence permit in Denmark
-Author: Ilja
-Date: 2014/06/26
-Placing: 0
-Hook: residence-permit
-Template: article
-*/
+## Getting a residence permit
 
 Everyone staying in Denmark for more than 3 months needs to apply for either a *residence permit* or a *registration certificate* – no later than 3 months following your entry.
 
 When and how you have to apply depends on what is your country of citizenship. Following table shows you when to apply. Below you will find brief instructions for each category.
 
-| You are…  | Before arrival   | After arrival  | No need to apply   | 
+| You are…  | Before arrival   | After arrival  | No need to apply   |
 | -------------           |-------------| -------------|
 | Non-EU/EEA citizen        | <span class="center-inline"><b>X</b></span>  |   |   |
 | EU/EEA or Swiss citizen |   | <span class="center-inline"><b>X</b></span> |   |
@@ -53,4 +45,3 @@ When visiting a Regional State Administration personally, you must always bring 
 
 #### Nordic citizens
 You don't need to apply for registration certificate – as you probably already know. However you **HAVE TO APPLY FOR CPR NUMBER**.
-

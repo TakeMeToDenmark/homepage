@@ -1,14 +1,4 @@
-/*
-Title: Rent a place
-Description: Tips, guides and links for renting apartment/room in Denmark
-Keywords: rent apartment in Denmark, apartments Denmark, apartments for rent Denmark 
-Author: Ilja
-Date: 2014/06/24
-Placing: 2
-Hook: rent-a-place
-Hero: covers/cover-study.jpg
-Template: article
-*/
+## Renting a place
 
 Here are some general tips when looking for a place: <sup id="cbs-tips-anchor"><a href="#cbs-tips" class="footnote-ref">1 CBS tips</a></sup>
 

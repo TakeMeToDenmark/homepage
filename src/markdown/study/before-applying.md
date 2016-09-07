@@ -1,12 +1,4 @@
-/*
-Title: Before applying
-Description: Preparing to apply for university in Denmark
-Author: Ilja
-Date: 2014/06/24
-Placing: 1
-Hook: before-applying
-Template: article
-*/
+## Before applying
 
 The first step is to pick your school(s) and program(s). You are allowed to apply for **up to 8 programs** but you have to prioritize your choices. You can choose from a list of schools and pick your desired program or browse a list of available programs first and then choose a school. Pick wise young padawan!
 
