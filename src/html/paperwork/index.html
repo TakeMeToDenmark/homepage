@@ -9,9 +9,10 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 
 	<!-- meta information -->
-	<title>{{ site.title }}</title>
+	<title>{{ paperwork.title }} – {{ site.title }}</title>
 	<link rel="author" href="{{ site.author }}" />
-	<meta name="description" content="{{ site.description }}">
+	<meta name="description" content="{{ paperwork.description }}">
+  <meta name="keywords" content="{{ paperwork.keywords }}" />
 
 	{% include "_shared/head.html" %}
 
@@ -42,7 +43,7 @@
 	</div>
 
   <main class="main" role="main">
-    <div class="wrapper">
+    <div class="wrapper-small">
 
       <article class="article">
         {% include "_text/paperwork/residence-permit.html" %}
