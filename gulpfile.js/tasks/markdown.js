@@ -4,8 +4,8 @@ var browserSync = require('browser-sync')
 var gulp = require('gulp')
 var handleErrors = require('../lib/handleErrors')
 var markdownContainer = require('markdown-it-container')
+var mardownFootnote = require('markdown-it-footnote')
 var markdownVideo = require('markdown-it-video')
-var md = require('markdown-it')()
 var path = require('path')
 var tap = require('gulp-tap')
 var util = require('gulp-util')
@@ -15,9 +15,16 @@ var paths = {
   dest: path.join(config.root.src, config.tasks.html.src, config.tasks.markdown.dest)
 }
 
+var md = require('markdown-it')({
+  html: true,
+  linkify: false,
+  typographer: true
+})
+
 md.use(markdownContainer, 'links')
 md.use(markdownContainer, 'important')
 md.use(markdownVideo)
+md.use(mardownFootnote)
 
 function markdownToHtml (file) {
   var result = md.render(file.contents.toString())
