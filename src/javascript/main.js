@@ -57,6 +57,7 @@ $(document).ready(function () {
       )
     })
   }
-
   dynamicToc()
+
+  $.bigfoot() // start up bigfoot plugin
 })
