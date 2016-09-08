@@ -68,6 +68,7 @@
     font-weight: 300;
     line-height: 1.15;
     overflow: ellipsis;
+    transition: all 0.25s ease-in-out;
   }
 
   .event__location {
@@ -75,6 +76,7 @@
     display: inline-block;
     font-size: 1.1rem;
     overflow: ellipsis;
+    transition: all 0.25s ease-in-out;
 
     &:before {
       bottom: 2px;
@@ -89,6 +91,14 @@
     .event__date {
       background-color: darken($gray6, 3%);
       border-color: $gray3;
+    }
+
+    .event__artist {
+      color: $gray1;
+    }
+
+    .event__location {
+      color: $gray2;
     }
   }
 }
