@@ -4,6 +4,9 @@ The first step is to pick your school(s) and program(s). You are allowed to appl
 
 Application process, entry requirements, necessary documentation (high school diploma, proof of english proficiency, etc.) and other formalities depend on a school and a program you choose, so you have to find out details for yourself.
 
+Teaser for a student life in Denmark:
+@[youtube](9Ji2AShbNVs)
+
 ::: important
 Before starting an application process check which documentation has to be **officially certified**. Some schools may require certified translations of documents that are not in English or Danish. So make sure you got those ready some time ahead of the deadline.
 :::
