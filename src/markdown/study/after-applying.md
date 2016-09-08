@@ -8,6 +8,4 @@ While you are impatiently waiting, you can slowly – or quickly, if you are sup
 
 And here is a little teaser for student life in Denmark
 
-<div class="video-embed">
-<iframe width="560" height="315" src="//www.youtube.com/embed/9Ji2AShbNVs" frameborder="0" allowfullscreen></iframe>
-</div>
+@[youtube](9Ji2AShbNVs)
