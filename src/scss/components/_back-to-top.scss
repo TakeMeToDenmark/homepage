@@ -1,0 +1,18 @@
+.back-to-top {
+  bottom: $spacing;
+  position: fixed;
+  right: $spacing;
+  z-index: $z-index-5;
+
+
+  img {
+    opacity: 0.75;
+    transition: opacity 0.25s ease-in-out;
+  }
+
+  &:hover {
+    img {
+      opacity: 1;
+    }
+  }
+}
