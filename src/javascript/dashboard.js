@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // WEATHER FORECAST WIDGET
   function forecastWidget () {
     $.simpleWeather({
       woeid: '554890',
@@ -31,6 +32,21 @@ $(document).ready(function () {
   }
   forecastWidget()
 
+  // CPHPOST NEWS WIDGET
+  function newsWidget () {
+
+    $("#news").rss("http://cphpost.dk/rss-feed/", {
+      limit: 8,
+      host: 'sheltered-tor-32039.herokuapp.com/',
+      effect: 'slide',
+      layoutTemplate: '<div class="feed">{entries}</div>',
+      entryTemplate: '<article class="item"><div class="item__image"><a href="{url}" target="_blank"><img src="{teaserImageUrl}" alt="{title}" /></a></div><div class="item__body"><h3 class="item__title"><a href="{url}" target="_blank">{title}</a></h3><p class="item__text">{shortBodyPlain}</p></div></article>'
+    })
+
+  }
+  newsWidget()
+
+  // SONGKICK CONCERTS WIDGET
   function concertsWidget () {
     var songkickApiKey = "M8RB64s5DjFzhNjB"
     var songkickResultsCount = 12

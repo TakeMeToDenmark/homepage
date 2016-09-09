@@ -1,0 +1,53 @@
+.feed {
+
+  .item {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-top: $spacing;
+  }
+
+  a {
+    display: block;
+  }
+
+  .item__image {
+    width: percentage(1/4);
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+    }
+  }
+
+  .item__body {
+    padding-left: $spacing/2;
+    width: percentage(3/4);
+  }
+
+  .item__title {
+    font-family: $base-font;
+    font-size: $font-size;
+    font-weight: 300;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .item__text {
+    font-size: $font-size--small;
+    padding-bottom: 0;
+  }
+}
+
+@media ($media-large) {
+  .feed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .item {
+    width: 46%;
+  }
+}
