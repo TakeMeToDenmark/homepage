@@ -17,17 +17,41 @@
     ul {
       list-style-type: none;
       margin-left: 0;
+      padding: 0;
     }
 
     li {
       display: inline-block;
       font-weight: 200;
-      margin: 0 $spacing/2;
+      margin: $spacing/2 $spacing/2;
     }
 
     img {
       display: inline-block;
       margin-right: $spacing/16;
+    }
+  }
+}
+
+@media ($media-large) {
+  .section__data {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .section__source {
+    }
+    .section__extra {
+      margin-left: $spacing;
+
+      ul {
+        display: inline-block;
+      }
+
+      li {
+        margin: 0 $spacing/2;
+      }
     }
   }
 }
