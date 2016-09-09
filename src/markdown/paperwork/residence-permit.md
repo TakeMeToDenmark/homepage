@@ -4,14 +4,15 @@ Everyone staying in Denmark for more than 3 months needs to apply for either a *
 
 When and how you have to apply depends on what is your country of citizenship. Following table shows you when to apply. Below you will find brief instructions for each category.
 
-| You are…  | Before arrival   | After arrival  | No need to apply   |
-| -------------           |-------------| -------------|
-| Non-EU/EEA citizen        | <span class="center-inline"><b>X</b></span>  |   |   |
-| EU/EEA or Swiss citizen |   | <span class="center-inline"><b>X</b></span> |   |
-| Nordic citizen          |   |   | <span class="center-inline"> <b>X</b></span> |
+
+| You are…                | Before arrival | After arrival | No need to apply |
+| ------------------------|:--------------:|:-------------:| ----------------:|
+| Non-EU/EEA citizen      |**X**           |               |                  |
+| EU/EEA or Swiss citizen |                |**X**          |                  |
+| Nordic citizen          |                |               |**X**             |
 
 
-#### Non-EU/EEA citizens
+### Non-EU/EEA citizens
 You have to apply for a residence permit **BEFORE** your arrival to Denmark – that means you should already have a permit when entering Denmark. You submit the application through Danish embassy or consulate in your country of residence. You have to pay a processing fee to the *Danish Immigration Service* (1670 DKK as of time of writing). Bear in mind that you will probably also have to pay a fee to your local authority and a bank transaction fee.
 
 <div class="box links">
