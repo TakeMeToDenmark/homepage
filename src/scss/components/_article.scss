@@ -1,3 +1,15 @@
 .article {
-  margin-bottom: $spacing;
+  border-bottom: 2px solid $gray4;
+  padding-bottom: $spacing;
+
+  &:last-of-type {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+
+  .footnotes-sep {
+    display: none;
+  }
+
 }
