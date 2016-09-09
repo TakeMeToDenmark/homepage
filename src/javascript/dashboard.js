@@ -42,7 +42,7 @@ $(document).ready(function () {
       success: function(t) {
         $.each(t.resultsPage.results.event, function(t, e) {
           var eventMonth = moment(e.start.date).format('MMM')
-          var eventDay = moment(e.start.date).format('d')
+          var eventDay = moment(e.start.date).format('D')
           var eventUrl = e.uri
           var eventArtist = e.performance[0].artist.displayName
           var eventVenue = e.venue.displayName
