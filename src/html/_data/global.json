@@ -2,7 +2,11 @@
   "site": {
     "title": "Take Me To Denmark",
     "author": "Ilja Panic",
-    "description": "Your real-life guide to Denmark"
+    "description": "Your real-life guide to Denmark",
+    "facebook": "https://www.facebook.com/TakeMeToDenmark",
+    "twitter": "https://twitter.com/TakeMeToDenmark",
+    "instagram": "https://instagram.com/takemetodenmark/",
+    "email": "hello@takemetodenmark.com"
   },
 
   "frontpage": {
