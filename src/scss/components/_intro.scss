@@ -1,3 +1,11 @@
 .intro {
   text-shadow: 1px 1px $gray1;
 }
+
+.updated {
+  text-align: right;
+  font-size: $font-size--small;
+  font-style: italic;
+  margin-top: $spacing;
+  padding: 0;
+}
