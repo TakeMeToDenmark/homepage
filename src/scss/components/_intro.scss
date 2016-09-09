@@ -6,6 +6,8 @@
   text-align: right;
   font-size: $font-size--small;
   font-style: italic;
-  margin-top: $spacing;
   padding: 0;
+  position: absolute;
+  bottom: $spacing;
+  right: $spacing;
 }

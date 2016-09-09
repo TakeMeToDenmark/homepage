@@ -4,17 +4,8 @@
   background-size: cover;
   color: white;
   padding-bottom: $spacing*2;
-
+  position: relative;
 }
-
-
-// .column {
-//   background-color: pink;
-// }
-//
-// .column--light {
-//   background-color: red;
-// }
 
 .hero--frontpage {
   background-image: url('../img/hero-frontpage.jpg');
