@@ -41,14 +41,14 @@ $(document).ready(function () {
   // DYNAMIC TABLE OF CONTENTS
   function dynamicToc () {
     // add id to headings
-    $('.article h2').each(function (index, value) {
+    $('h2').each(function (index, value) {
       var newId = $(this).text()
       var newIdNormalized = newId.replace(/\s+/g, '-').toLowerCase()
       $(this).attr('id', newIdNormalized)
     })
 
     // generate TOC
-    $('.article h2').each(function (index, value) {
+    $('h2').each(function (index, value) {
       var headingContent = $(this).text()
       var headingId = headingContent.replace(/\s+/g, '-').toLowerCase()
 
