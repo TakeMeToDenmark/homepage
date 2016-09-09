@@ -4,4 +4,30 @@
   section {
     margin-bottom: $spacing*2;
   }
+
+  .section__source {
+    text-align: center;
+
+    img {
+      display: inline-block;
+    }
+  }
+
+  .section__extra {
+    ul {
+      list-style-type: none;
+      margin-left: 0;
+    }
+
+    li {
+      display: inline-block;
+      font-weight: 200;
+      margin: 0 $spacing/2;
+    }
+
+    img {
+      display: inline-block;
+      margin-right: $spacing/16;
+    }
+  }
 }
