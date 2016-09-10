@@ -1,0 +1,56 @@
+.newsletter {
+
+  margin-top: $spacing;
+
+  .newsletter__form {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 42rem;
+    margin: 0 auto;
+    padding-top: $spacing/2;
+
+    .newsletter__email {
+      width: percentage(3/5);
+    }
+
+    .newsletter__button {
+      width: percentage(2/5);
+    }
+  }
+
+  .newsletter__headline {
+    color: $gray2;
+    font-size: $font-size--large;
+    font-weight: 300;
+    padding: 0;
+  }
+
+  $newsletter-radius: 0.25rem;
+
+  .newsletter__email {
+    border-top-left-radius: $newsletter-radius;
+    border-bottom-left-radius: $newsletter-radius;
+    padding: $spacing/4 $spacing/4;
+  }
+
+  .newsletter__button {
+    background-color: rgba($gray1, 0.85);
+    border-top-right-radius: $newsletter-radius;
+    border-bottom-right-radius: $newsletter-radius;
+    color: $gray6;
+    cursor: pointer;
+    font-size: $font-size--small;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: $spacing/4;
+    text-transform: uppercase;
+    transition: background 0.25s ease-in-out;
+
+    &:hover {
+      background-color: rgba($gray1, 1);
+    }
+
+  }
+
+}

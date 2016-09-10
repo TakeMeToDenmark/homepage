@@ -301,3 +301,10 @@ select:-webkit-autofill {
   -webkit-text-fill-color: $gray1;
   -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
+
+::selection {
+  background: rgba($primary, 0.25); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgba($primary, 0.25); /* Gecko Browsers */
+}

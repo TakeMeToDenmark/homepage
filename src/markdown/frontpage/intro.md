@@ -1,4 +1,4 @@
-# Your guide for life in Denmark
+# Your guide for living in Denmark
 
 Moving to Denmark involves a number of things you need to do and remember. You can find many websites and tutorials out there but information there tends to be overwhelming, too specialized and ultimately makes you worry about things that don't really matter.
 

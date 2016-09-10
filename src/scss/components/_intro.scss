@@ -3,11 +3,12 @@
 }
 
 .updated {
-  text-align: right;
+  bottom: $spacing;
+  color: $gray4;
   font-size: $font-size--small;
   font-style: italic;
   padding: 0;
   position: absolute;
-  bottom: $spacing;
   right: $spacing;
+  text-align: right;
 }

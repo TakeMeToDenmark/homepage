@@ -1,0 +1,49 @@
+.suggestion {
+  color: $gray2;
+  cursor: pointer;
+  margin-top: $spacing*2;
+  transition: color 0.35s ease-in-out;
+
+  img {
+    display: inline-block;
+    min-height: 10rem;
+    opacity: 0.75;
+    transition: opacity 0.35s ease-in-out;
+  }
+
+  &:hover {
+    color: $gray1;
+    
+    img {
+      opacity: 1;
+    }
+  }
+}
+
+.suggestion__text {
+  font-size: $font-size--large;
+  font-weight: 300;
+}
+
+@media ($media-large) {
+
+  .suggestion {
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .suggestion__image {
+    text-align: center;
+    width: percentage(1/3);
+    // background: pink;
+  }
+
+  .suggestion__text {
+    // background-color: gold;
+    // padding-left: $spacing;
+    text-align: left;
+    width: percentage(2/3);
+  }
+
+}

@@ -1,6 +1,14 @@
 # Study in Denmark
-Denmark puts a lot of money into education. As a result the overall quality and level of schools here is very high. Students are well cared for and cities are swarming with them. Many universities offer programs taught in English. This makes Denmark a lucrative location for international students too.
+Most universities offer programs in English making Denmark quite popular with international students. The quality and level of education here is high, it is common to have a student job and overall students are well cared for. Also if you are an **EU/EEA/Swiss citizen or an exchange student you don’t pay for your studies**. This makes Denmark a great place to kick-start your journey through life.
 
-**If you are from EU/EEA,  Switzerland or if you are an exchange student you don't pay anything for your studies.** (you can find information about tuition fees for non-EU citizens below)
+Below are instructions for applying for bachelor programs. Using the provided links you can find out information about master, exchange and other study programs.
 
-The instructions on this page apply to bachelor programs. Through provided links you should be able to find information about applying for master, exchange and other types of programs as well.
+
+
+ about tuition fees for non-EU citizens and 
+
+ find information and re
+ as well. You 
+
+
+(You can find information below)

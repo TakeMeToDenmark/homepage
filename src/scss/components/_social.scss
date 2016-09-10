@@ -1,0 +1,31 @@
+.social {
+  margin-top: $spacing;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 $spacing/2;
+  }
+
+  svg {
+    fill: $gray2;
+    transition: fill 0.35s ease-in-out;
+  }
+
+  .facebook:hover svg {
+    fill: $facebook;
+  }
+
+  .instagram:hover svg {
+    fill: $instagram;
+  }
+
+  .twitter:hover svg {
+    fill: $twitter;
+  }
+}

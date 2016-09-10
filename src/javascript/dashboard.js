@@ -30,6 +30,7 @@ $(document).ready(function () {
       }
     })
   }
+
   forecastWidget()
 
   // CPHPOST NEWS WIDGET

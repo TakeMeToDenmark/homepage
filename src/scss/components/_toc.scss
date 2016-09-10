@@ -25,9 +25,16 @@
   }
 
   a {
-    color: inherit;
-    border-bottom: 2px solid $primary;
+    color: $gray5;
+    border-bottom: 2px solid rgba($primary, 0.75);
     font-size: $font-size--large;
+    font-weight: 200;
     padding-bottom: $spacing/12;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+      border-color: $primary;
+      color: $gray6;
+    }
   }
 }
