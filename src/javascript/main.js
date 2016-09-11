@@ -41,14 +41,14 @@ $(document).ready(function () {
   // DYNAMIC TABLE OF CONTENTS
   function dynamicToc () {
     // add id to headings
-    $('h2').each(function (index, value) {
+    $('h2').not('.toc-ignore').each(function (index, value) {
       var newId = $(this).text()
       var newIdNormalized = newId.replace(/\s+/g, '-').toLowerCase()
       $(this).attr('id', newIdNormalized)
     })
 
     // generate TOC
-    $('h2').each(function (index, value) {
+    $('h2').not('.toc-ignore').each(function (index, value) {
       var headingContent = $(this).text()
       var headingId = headingContent.replace(/\s+/g, '-').toLowerCase()
 
@@ -61,9 +61,49 @@ $(document).ready(function () {
 
   $.bigfoot() // start up bigfoot plugin
 
-  // CONTACT POP-UP
-  $('.open-suggestion-popup').magnificPopup({
-    type: 'inline',
-    midClick: true
+  // SUGGESTION SLIDE OUT
+  function suggestionSlide () {
+    $('.suggestion__slide').hide() // hide slide
+
+    $('.suggestion__activate .btn').click(function () { // slide out on click
+      $('.suggestion__activate').slideUp() // hide prompt
+      $('.suggestion__slide').slideDown(600) // slide in the form
+      $('#message-form input.name').select() // select first field
+    })
+  }
+  suggestionSlide()
+
+  // MESSAGE FORM
+  $('#message-form').submit(function (e) {
+    var submitUrl = 'https://formspree.io/hello@takemetodenmark.com'
+
+    $('.message').animate({
+      'height': '0',
+      'opacity': '0'
+    }, 500)
+
+    $.ajax({
+      url: submitUrl,
+      method: 'POST',
+      data: $('#message-form').serialize(),
+      dataType: 'json',
+      success: function (data) {
+        setTimeout(function () {
+          $('.form-success').fadeIn()
+        }, 400)
+      },
+      error: function (data) {
+      }
+    })
+
+    e.preventDefault()
+  })
+
+  var $loading = $('.spinner').hide()
+  $(document).ajaxStart(function () {
+    $loading.fadeIn()
+  })
+  .ajaxStop(function () {
+    $loading.fadeOut()
   })
 })

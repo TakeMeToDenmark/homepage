@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"><g  transform="translate(0.5, 0.5)">
-<polygon data-color="color-2" fill="none" stroke="#eaeaec" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"><g  transform="translate(0, 0)">
+<polygon data-color="color-2" fill="none" stroke="#eaeaec" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
 34,5 34,31 44,23 62,23 62,5 " stroke-linejoin="miter"/>
-<circle fill="none" stroke="#eaeaec" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" cx="18" cy="29" r="8" stroke-linejoin="miter"/>
-<path fill="none" stroke="#eaeaec" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M34,59H2v-8.338
+<circle fill="none" stroke="#eaeaec" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="18" cy="29" r="8" stroke-linejoin="miter"/>
+<path fill="none" stroke="#eaeaec" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M34,59H2v-8.338
 c0-2.457,1.478-4.69,3.771-5.574C8.435,44.059,12.511,43,18,43s9.565,1.059,12.229,2.087C32.522,45.972,34,48.204,34,50.662V59z" stroke-linejoin="miter"/>
 </g></svg>

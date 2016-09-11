@@ -3,35 +3,44 @@
   border: 1px solid $gray3;
   border-radius: 0.35rem;
   color: $gray5;
-  cursor: pointer;
   margin-top: $spacing*2;
   padding: $spacing $spacing;
-  transition: color 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 
   img {
     display: inline-block;
-    height: 100%;
-    opacity: 0.75;
-    transition: opacity 0.35s ease-in-out;
+    width: 100%;
+    transition: all 0.35s ease-in-out;
   }
 
-  &:hover {
+  .btn,
+  input[type="submit"] {
+    background-color: $gray2;
+    border: 2px solid $gray4;
+    border-radius: 0.35rem;
+    display: inline-block;
     color: $gray6;
+    cursor: pointer;
+    font-size: $font-size--small;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: $spacing/4 $spacing/2;
+    text-transform: uppercase;
+    transition: all 0.25s ease-in-out;
 
-    img {
-      opacity: 1;
+    &:hover {
+      background-color: $gray6;
+      color: $gray1;
     }
   }
+
 }
 
 .suggestion__image {
-  // background-color: gold;
+  text-align: center;
 }
 
 .suggestion__text {
-  // font-size: $font-size--large;
-  // font-weight: 300;
-  // background: pink;
 
   p {
     padding-bottom: 0;
@@ -42,17 +51,60 @@
   padding-top: 0;
 }
 
-.suggestion-popup {
-  background: $gray5;
-  max-width: $wrapper-small;
-  margin: $spacing auto;
-  padding: $spacing;
-  position: relative;
-  width: auto;
+.suggestion__activate {
+  margin-top: $spacing/2;
+  text-align: center;
+  width: 100%;
 }
 
 
-@media ($media-large) {
+.message {
+
+  label {
+    color: $gray5;
+    font-size: $font-size--small;
+    margin-bottom: $spacing/8;
+  }
+
+  input {
+    border: 2px solid $gray4;
+    border-radius: 0.25rem;
+    padding: $spacing/8;
+    width: 100%;
+  }
+
+  textarea {
+    border: 2px solid $gray4;
+    border-radius: 0.25rem;
+    line-height: 1.35;
+    padding: $spacing/4;
+    width: 100%;
+  }
+
+  .form-item {
+    margin-top: $spacing/2;
+  }
+}
+
+.message__button {
+  margin-top: $spacing;
+}
+
+.form-success {
+  display: none; // hide by default, show via jQuery
+  text-align: center;
+
+  p {
+    font-size: $font-size--large;
+    padding: 0;
+  }
+
+  .headline {
+    font-weight: 300;
+  }
+}
+
+@media ($media-medium) {
 
   .suggestion {
     align-items: center;
@@ -64,16 +116,45 @@
   .suggestion__image {
     text-align: center;
     width: percentage(1/4);
-
-    img {
-      width: 100%;
-    }
   }
 
   .suggestion__text {
     padding-right: $spacing*2;
     text-align: left;
     width: percentage(3/4);
+  }
+
+  .suggestion__slide {
+    margin: 0 auto;
+    max-width: 560px;
+  }
+
+  .message {
+    display: flex;
+    flex-wrap: wrap;
+
+    .message__name,
+    .message__email {
+      width: percentage(1/2);
+    }
+
+    .message__name {
+      padding-right: $spacing/4;
+    }
+
+    .message__text {
+      width: 100%;
+    }
+
+    .message__button {
+      text-align: center;
+      width: 100%;
+
+      input {
+        display: inline-block;
+        width: auto;
+      }
+    }
   }
 
 }

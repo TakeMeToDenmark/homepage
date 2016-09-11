@@ -1,15 +1,60 @@
-<section data-mfp-src="#suggestion-popup" class="suggestion open-suggestion-popup">
+<section class="suggestion">
   <div class="suggestion__text">
-    <h2 class="suggestion__title">Help us improve the site!</h2>
-    <p>Please send us your recommendations for what would you like to see on the website in the future.</p>
+    <h2 class="suggestion__title toc-ignore">Help us improve the site!</h2>
+    <p>Please send us your suggestions for what would you like to see on the website in the future.</p>
   </div>
   <div class="suggestion__image">
     <img src="/assets/img/icons/comment.svg" alt="comment icon" />
   </div>
+  <div class="suggestion__activate">
+    <span class="btn">Write a message</span>
+  </div>
+  <div class="suggestion__slide">
+
+    <form id="message-form" method="POST" class="message">
+
+      <div class="form-item message__name">
+        <label for="name">Your name</label>
+        <input type="text" name="name" class="name" required>
+      </div>
+
+      <div class="form-item message__email">
+        <label for="_replyto">Your email</label>
+        <input type="email" name="_replyto" required>
+      </div>
+
+      <div class="form-item message__text">
+        <label for="message">Your message</label>
+        <textarea rows="8" name="message" required></textarea>
+      </div>
+
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="hidden" name="_subject" value="Message from TMTD" />
+
+      <div class="message__button">
+        <input type="submit" value="Send message" class="btn">
+      </div>
+    </form>
+
+    <div class="sk-fading-circle spinner">
+      <div class="sk-circle1 sk-circle"></div>
+      <div class="sk-circle2 sk-circle"></div>
+      <div class="sk-circle3 sk-circle"></div>
+      <div class="sk-circle4 sk-circle"></div>
+      <div class="sk-circle5 sk-circle"></div>
+      <div class="sk-circle6 sk-circle"></div>
+      <div class="sk-circle7 sk-circle"></div>
+      <div class="sk-circle8 sk-circle"></div>
+      <div class="sk-circle9 sk-circle"></div>
+      <div class="sk-circle10 sk-circle"></div>
+      <div class="sk-circle11 sk-circle"></div>
+      <div class="sk-circle12 sk-circle"></div>
+    </div>
+
+    <div class="form-success">
+      <p class="headline">Thank you for your message!</p>
+      <p>We will get back to you soon.</p>
+    </div>
+
+  </div>
 </section>
-
-
-<div id="suggestion-popup" class="suggestion-popup mfp-hide">
-  Popup content
-  hollyyyy guaaaa
-</div>
