@@ -5,15 +5,15 @@
 <footer class="footer" role="contentinfo">
   <div class="wrapper">
 
+    {% include '_shared/newsletter.html' %}
+
     <section class="disclaimer">
       {% include '_text/frontpage/disclaimer.html' %}
     </section>
 
-    {% include '_shared/newsletter.html' %}
-
     <section class="colophon">
-      <p>Curated by people with care and lots of coffee</p>
       {% include '_shared/social.html' %}
+      <p>Curated with care and lots of coffee</p>
       <p><script>document.write(new Date().getFullYear())</script>&nbsp;Copenhagen</p>
     </section>
 
