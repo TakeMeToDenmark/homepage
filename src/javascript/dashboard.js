@@ -86,7 +86,7 @@ $(document).ready(function () {
             + '</a>' // END event link
             + '</li>'
           )
-          // $("#concerts").append('<li><a href="' + e.uri + '" target="_blank"><div class="concert-date"><span class="concert-month">' + month + '</span><span class="concert-day">' + day + '</span></div><div class="concert-info"><span class="concert-artist">' + e.performance[0].artist.displayName + '</span><span class="concert-venue">@' + e.venue.displayName + "</span></div></a></li>")
+
           })
       }
     })

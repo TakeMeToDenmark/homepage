@@ -60,4 +60,10 @@ $(document).ready(function () {
   dynamicToc()
 
   $.bigfoot() // start up bigfoot plugin
+
+  // CONTACT POP-UP
+  $('.open-suggestion-popup').magnificPopup({
+    type: 'inline',
+    midClick: true
+  })
 })
