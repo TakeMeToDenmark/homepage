@@ -30,6 +30,7 @@
     "gulp-autoprefixer": "*",
     "gulp-cssnano": "*",
     "gulp-data": "^1.2.1",
+    "gulp-front-matter": "^1.3.0",
     "gulp-group-css-media-queries": "*",
     "gulp-htmlmin": "^2.0.0",
     "gulp-imagemin": "*",

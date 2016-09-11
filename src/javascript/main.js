@@ -66,6 +66,9 @@ $(document).ready(function () {
     $('.suggestion__slide').hide() // hide slide
 
     $('.suggestion__activate .btn').click(function () { // slide out on click
+      $('.suggestion__image img').animate({
+        'opacity': '1'
+      })
       $('.suggestion__activate').slideUp() // hide prompt
       $('.suggestion__slide').slideDown(600) // slide in the form
       $('#message-form input.name').select() // select first field
