@@ -1,9 +1,3 @@
----
-title: Application process
-published: true
-date: 24 August 2016
----
-
 ## Application process
 
 All applications are handled through [**optagelse.dk**](http://www.optagelse.dk/admission/index.html). The website is user-friendly and offers clear instructions for the required steps. Once you create your account and login, there are four major parts of your application:

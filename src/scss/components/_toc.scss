@@ -16,12 +16,7 @@
   }
 
   li {
-    display: inline-block;
-    margin-right: $spacing;
-
-    &:last-of-type {
-      margin-right: 0;
-    }
+    margin-bottom: $spacing/2;
   }
 
   a {
@@ -35,6 +30,17 @@
     &:hover {
       border-color: $primary;
       color: $gray6;
+    }
+  }
+}
+
+@media ($media-large) {
+  li {
+    display: inline-block;
+    margin-right: $spacing;
+
+    &:last-of-type {
+      margin-right: 0;
     }
   }
 }
