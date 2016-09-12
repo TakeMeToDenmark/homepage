@@ -14,6 +14,11 @@
 	<meta name="description" content="{{ study.description }}">
   <meta name="keywords" content="{{ study.keywords }}" />
 
+  <meta property="og:title" content="{{ study.title}} – {{ site.title }}"/>
+  <meta property="og:image" content="/assets/img/hero-study.jpg"/>
+  <meta property="og:site_name" content="{{ site.title }}"/>
+  <meta property="og:description" content="{{ study.description }}"/>
+
 	{% include "_shared/head.html" %}
 
 
