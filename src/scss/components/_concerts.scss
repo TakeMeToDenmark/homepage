@@ -11,6 +11,9 @@
     align-items: center;
     display: flex;
     margin-bottom: $spacing*1.5;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: $spacing/4;
     text-align: left;
     width: percentage(1/2);
   }

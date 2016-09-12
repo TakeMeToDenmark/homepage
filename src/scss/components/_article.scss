@@ -2,6 +2,10 @@
   border-bottom: 2px solid $gray4;
   padding-bottom: $spacing;
 
+  // li {
+  //   list-style-type: disc;
+  // }
+
   &:last-of-type {
     border-bottom: 0;
     padding-bottom: 0;
@@ -11,5 +15,4 @@
   .footnotes-sep {
     display: none;
   }
-
 }
