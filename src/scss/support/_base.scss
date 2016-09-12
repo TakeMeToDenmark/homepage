@@ -17,7 +17,7 @@ html{
 }
 
 *, *:before, *:after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body{
@@ -149,19 +149,10 @@ video{
   display: table;
 }
 
-hr{
-  height: 4.8rem;
-  margin-bottom: 2.4rem;
-  position: relative;
-
-  &:before{
-    background-color: $gray4;
-    content: '';
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-  }
+hr {
+  border: 0;
+  height: 1px;
+  background-color: $gray3;
 }
 
 ol,

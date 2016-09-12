@@ -9,6 +9,7 @@ $box-bg-offest: 6px;
 .important {
   border: $box-border-width solid $gray3;
   border-radius: $box-radius;
+  font-size: $font-size--small;
   margin-bottom: $box-margin;
   padding: $box-padding;
 
@@ -22,6 +23,16 @@ $box-bg-offest: 6px;
     letter-spacing: 1px;
     padding-left: $box-bg-size + $box-bg-offest;
     text-transform: uppercase;
+  }
+
+  h3 {
+    font-family: $base-font;
+    font-size: $font-size--large;
+    font-weight: 300;
+
+    &:first-of-type {
+      padding-top: 0;
+    }
   }
 }
 
@@ -55,8 +66,14 @@ $box-bg-offest: 6px;
     margin-top: 0;
   }
 
+  hr {
+    background-color: darken($links, 10%);
+    margin-top: $spacing;
+  }
+
   a {
     color: $gray1;
+    font-size: $font-size;
     font-weight: 300;
     &:after {
       content: '';

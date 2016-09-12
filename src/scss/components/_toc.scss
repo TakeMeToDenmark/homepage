@@ -35,12 +35,15 @@
 }
 
 @media ($media-large) {
-  li {
-    display: inline-block;
-    margin-right: $spacing;
 
-    &:last-of-type {
-      margin-right: 0;
+  .toc {
+    li {
+      display: inline-block;
+      margin-right: $spacing;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
   }
 }

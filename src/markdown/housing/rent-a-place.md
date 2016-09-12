@@ -25,27 +25,33 @@ Watch out for scammers. Ooh yes, plenty of wrong doers out there on Danish websi
 :::
 
 ::: links
-**FREE**
+### FREE
 - [dba.dk](http://www.dba.dk/) - “The blue newspaper” (*Den Blå Avis*), the largest online marketplace in Denmark. Think of it as a Danish eBay where you can find apartments and rooms for rent (besides other things). The website may seem a little chaotic at the beginning, but once you get used to it, it's pretty easy to find your way around. You will find two types of ads on the site. The ones which were added through DBA (<em>Private</em>) and ones pointing to other sites (<em>Forhandlere</em> = Dealer). Visit this website daily and act immediately upon seeing an ad matching your needs. Especially ads with a phone number tend to be rented out in the matter of hours if not minutes.</li>
 - [ledige-lejligheder.dk](http://www.ledige-lejligheder.dk/) - rented housing from both private rentals and professionals rental companies
 - [akutbolig.dk](http://www.akutbolig.dk/) - the largest free to use rented housing site in Denmark (only apartments from rental companies)
 - [boligbesked.dk](https://www.boligbesked.dk/?lang=en) - matchmaking between renter and rentals
 - [expatriates.com](http://www.expatriates.com/classifieds/cop/housingavailable/)
 
-***PAID***
-- [boligportal.dk](http://www.boligportal.dk/) - Probably the biggest rental portal out there. <b>If you have to pick only one site to pay for, make it this one.</b> If there is no phone number in the ad, the communication is handled through the website. Expect to wait couple of days for the response, also don't be surprised if you don't get any response at all
+* * *
+
+### PAID
+- [boligportal.dk](http://www.boligportal.dk/) - probably the biggest rental portal out there. <b>If you have to pick only one site to pay for, make it this one.</b> If there is no phone number in the ad, the communication is handled through the website. Expect to wait couple of days for the response, also don't be surprised if you don't get any response at all
 - [lejebolig.dk](http://www.lejebolig.dk/) - one of the more user-friendly and visually appealing websites out there. There has been some negative feedback on this website (too many scams), but the best is just to check it out for yourself
 - [boligninja.dk](http://en.boligninja.dk/)
-- [boligbasen.dk](http://boligbasen.dk/) - One of the bigger sites
-- [findroommate.dk](http://findroommate.dk/) - Website aimed exclusively at people looking to live with someone. If you are deliberately looking to live with a roommate, then this website is definitely worth checking out.
+- [boligbasen.dk](http://boligbasen.dk/) - one of the bigger sites
+- [findroommate.dk](http://findroommate.dk/) - website aimed exclusively at people looking to live with someone. If you are deliberately looking to live with a roommate, then this website is definitely worth checking out.
 - [husvild.dk](http://www.husvild.dk/)
 - [bolighit.dk](http://www.bolighit.dk/)
 
-***SOCIAL HOUSING AND OTHERS***
+* * *
+
+### SOCIAL HOUSING AND OTHERS
 - [domea.dk](http://www.domea.dk/)
 - [lejerbo.dk](http://www.lejerbo.dk/)
 
-***FACEBOOK***
+* * *
+
+### FACEBOOK
 
 There are numerous Facebook groups where people post apartments and rooms for rent. Bellow are some examples of these groups, you can find other ones by searching “**lejligheder til leje**” (apartments for rent) or “**værelser**” (rooms) through Facebook search.
 
