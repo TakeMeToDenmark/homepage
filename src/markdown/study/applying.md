@@ -17,9 +17,8 @@ The website will guide you through the whole application process, but there is s
 
 This applies to each and every program individually, meaning 3 programs at 1 school equal 3 signature pages, therefore you send all 3 of them to the same school. You usually send this sorts of documents by ordinary post, but many schools accept a scanned copy sent via email (**check with your school!**). The school can‘t access your profile without receiving the signed page first.
 
-<div class="box important">
-<div class="box-title"><i class="icon-important"></i>Important</div>
-<p>You must make sure that the signed signature page reaches the school <b>BEFORE</b> the application deadline.</p>
-</div>
-
 Most schools don't require physical copies of supporting documentation and are fine with a scanned copy uploaded through *Enclosures* section of the application website; but **double check** that with the website of the school(s) you are applying to.
+
+::: important
+You must make sure that the signed signature page reaches the school **BEFORE** the application deadline.
+:::

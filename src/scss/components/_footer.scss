@@ -5,6 +5,14 @@
   padding-top: $spacing*1.5;
   text-align: center;
 
+  .work {
+
+    p {
+      padding: 0;
+      font-weight: 200;
+    }
+  }
+
   .disclaimer {
     color: $gray2;
     font-size: $font-size--small;
