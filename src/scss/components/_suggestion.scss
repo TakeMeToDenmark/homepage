@@ -9,8 +9,9 @@
 
   img {
     display: inline-block;
+    margin-top: $spacing;
     opacity: 0.75;
-    width: 100%;
+    width: 55%;
     transition: all 0.35s ease-in-out;
   }
 
@@ -117,6 +118,11 @@
   .suggestion__image {
     text-align: center;
     width: percentage(1/4);
+
+    img {
+      margin-top: 0;
+      width: 100%;
+    }
   }
 
   .suggestion__text {
