@@ -40,7 +40,7 @@
     "images": {
       "src": "images",
       "dest": "assets/img",
-      "extensions": ["jpg", "png", "svg", "gif", "jpeg"]
+      "extensions": ["jpg", "png", "svg", "gif", "jpeg", "ico"]
     },
 
     "markdown": {
