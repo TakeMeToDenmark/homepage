@@ -293,7 +293,8 @@ select:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
 
-::selection {
+::selection,
+:focus {
   background: rgba($primary, 0.25); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {

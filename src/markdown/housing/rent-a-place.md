@@ -37,7 +37,7 @@ Watch out for scammers. Ooh yes, plenty of wrong doers out there on Danish websi
 ### PAID
 - [boligportal.dk](http://www.boligportal.dk/) - probably the biggest rental portal out there. <b>If you have to pick only one site to pay for, make it this one.</b> If there is no phone number in the ad, the communication is handled through the website. Expect to wait couple of days for the response, also don't be surprised if you don't get any response at all
 - [lejebolig.dk](http://www.lejebolig.dk/) - one of the more user-friendly and visually appealing websites out there. There has been some negative feedback on this website (too many scams), but the best is just to check it out for yourself
-- [boligninja.dk](http://en.boligninja.dk/)
+- [boligninja.dk](http://en.boligninja.dk/) - a user friendly website with 2000-3000 available tenancies across Denmark
 - [boligbasen.dk](http://boligbasen.dk/) - one of the bigger sites
 - [findroommate.dk](http://findroommate.dk/) - website aimed exclusively at people looking to live with someone. If you are deliberately looking to live with a roommate, then this website is definitely worth checking out.
 - [husvild.dk](http://www.husvild.dk/)
