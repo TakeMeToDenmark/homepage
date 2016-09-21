@@ -35,62 +35,62 @@ $(document).ready(function () {
 
   // CPHPOST NEWS WIDGET
   function newsWidget () {
-
-    $("#news").rss("http://cphpost.dk/rss-feed/", {
+    $('#news').rss('http://cphpost.dk/rss-feed/', {
       limit: 8,
       host: 'sheltered-tor-32039.herokuapp.com/',
       effect: 'slide',
       layoutTemplate: '<div class="feed">{entries}</div>',
       entryTemplate: '<article class="item"><div class="item__image"><a href="{url}" target="_blank"><img src="{teaserImageUrl}" alt="{title}" /></a></div><div class="item__body"><h3 class="item__title"><a href="{url}" target="_blank">{title}</a></h3><p class="item__text">{shortBodyPlain}</p></div></article>'
     })
-
   }
   newsWidget()
 
   // SONGKICK CONCERTS WIDGET
   function concertsWidget () {
-    var songkickApiKey = "M8RB64s5DjFzhNjB"
+    var songkickApiKey = 'M8RB64s5DjFzhNjB'
     var songkickResultsCount = 12
     var songkickMetroAreaCode = 28617
 
     $.ajax({
       url: 'http://api.songkick.com/api/3.0/metro_areas/' + songkickMetroAreaCode + '/calendar.json?apikey=' + songkickApiKey + '&per_page=' + songkickResultsCount + '&jsoncallback=?',
       dataType: 'jsonp',
-      success: function(t) {
-        $.each(t.resultsPage.results.event, function(t, e) {
+      success: function (data) {
+        $.each(data.resultsPage.results.event, function (data, e) {
           var eventMonth = moment(e.start.date).format('MMM')
           var eventDay = moment(e.start.date).format('D')
           var eventUrl = e.uri
-          var eventArtist = e.performance[0].artist.displayName
+          if (e.performance.length) {
+            var eventArtist = e.performance[0].displayName
+          } else {
+            eventArtist = 'Unknown Artist'
+          }
           var eventVenue = e.venue.displayName
 
-
           $('#concerts').append(
-            '<li>'
-            + '<a href="' + eventUrl + '" target="_blank">' // START event link
+            '<li>' +
+            '<a href="' + eventUrl + '" target="_blank">' + // START event link
 
-            + '<div class="event">' // START event
+            '<div class="event">' + // START event
 
-            + '<div class="event__date">' // START date
-            + '<div class="event__month">' + eventMonth + '</div>' // event month
-            + '<div class="event__day">' + eventDay + '</div>' // event day
-            + '</div>' // END date
+            '<div class="event__date">' + // START date
+            '<div class="event__month">' + eventMonth + '</div>' + // event month
+            '<div class="event__day">' + eventDay + '</div>' + // event day
+            '</div>' + // END date
 
-            + '<div class="event__info">' // START event info
-            + '<div class="event__artist">' + eventArtist + '</div>' // event artist
-            + '<div class="event__location">' + eventVenue + '</div>' // event location
-            + '</div>' // END event info
+            '<div class="event__info">' + // START event info
 
-            + '</div>' // END event
+            '<div class="event__artist">' + eventArtist + '</div>' + // event artist
+            '<div class="event__location">' + eventVenue + '</div>' + // event location
+            '</div>' + // END event info
 
-            + '</a>' // END event link
-            + '</li>'
+            '</div>' + // END event
+
+            '</a>' + // END event link
+            '</li>'
           )
-
-          })
+        })
       }
     })
   }
-
   concertsWidget()
 })
