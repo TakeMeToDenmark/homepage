@@ -2,6 +2,12 @@
   margin-top: $spacing;
 }
 
+.weather-links {
+  a {
+    color: inherit;
+  }
+}
+
 
 .weather__forecast {
   display: flex;
