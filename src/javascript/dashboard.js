@@ -33,6 +33,11 @@ $(document).ready(function () {
 
   forecastWidget()
 
+  var newsLoading = $('.news__loading');
+  var newsError = $('.news__error');
+
+  newsError.hide()
+
   // CPHPOST NEWS WIDGET
   function newsWidget () {
     $('#news').rss('http://cphpost.dk/rss-feed/', {
@@ -40,6 +45,13 @@ $(document).ready(function () {
       host: 'sheltered-tor-32039.herokuapp.com/',
       effect: 'slide',
       layoutTemplate: '<div class="feed">{entries}</div>',
+      success: function(){
+        newsLoading.fadeOut()
+      },
+      error: function() {
+        newsLoading.fadeOut()
+        newsError.fadeIn()
+      },
       entryTemplate: '<article class="item"><div class="item__image"><a href="{url}" target="_blank"><img src="{teaserImageUrl}" alt="{title}" /></a></div><div class="item__body"><h3 class="item__title"><a href="{url}" target="_blank">{title}</a></h3><p class="item__text">{shortBodyPlain}</p></div></article>'
     })
   }
