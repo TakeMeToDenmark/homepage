@@ -9,6 +9,7 @@
 
     img {
       display: inline-block;
+      max-width: 128px;
     }
   }
 
@@ -33,7 +34,7 @@
 
   .read-more {
     display: inline-block;
-    font-size: $font-size--large;
+    // font-size: $font-size--large;
     font-weight: 300;
     margin-top: $spacing*1.5;
     text-transform: uppercase;
