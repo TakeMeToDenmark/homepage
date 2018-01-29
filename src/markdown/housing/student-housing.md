@@ -21,7 +21,7 @@ Be aware that if you for some reason decline a certain number of offers for a pl
 ::: links
 - [KKIK](http://www.kollegierneskontor.dk) - largest portal
 - [FindBolig](http://www.findbolig.nu) - large portal (only in Danish)
-- [HousingAnywhere](http://www.housinganywhere.com/) - student-to-student housing platform for exchange and internship students (you need a school email to be able to rent out)
+- [HousingAnywhere](http://www.housinganywhere.com/) - student-to-student housing platform for exchange and internship students
 - [ungdomsboliger.dk](http://www.ungdomsboliger.dk/?id=navigationskort&lang=en)
 :::
 
