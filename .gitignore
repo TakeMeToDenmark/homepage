@@ -9,6 +9,7 @@
 
 # Ignore the build directory
 /dist
+/src/html/_text
 
 # Ignore cache
 /.sass-cache
