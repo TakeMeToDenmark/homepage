@@ -4,6 +4,7 @@ var browserSync = require('browser-sync')
 var data = require('gulp-data')
 var fs = require('fs')
 var gulp = require('gulp')
+var gulpSequence = require('gulp-sequence')
 var handleErrors = require('../lib/handleErrors')
 var htmlmin = require('gulp-htmlmin')
 var nunjucksRender = require('gulp-nunjucks-render')
@@ -20,7 +21,7 @@ var getGlobal = function (file) {
   return JSON.parse(fs.readFileSync(dataGlobal, 'utf8'))
 }
 
-var htmlTask = function () {
+var htmlTemplatesTask = function () {
   return gulp.src(paths.src)
     .pipe(data(getGlobal))
     .on('error', handleErrors)
@@ -34,5 +35,11 @@ var htmlTask = function () {
     .pipe(browserSync.stream())
 }
 
-gulp.task('html', ['markdown'], htmlTask)
-module.exports = htmlTask
+gulp.task('html-templates', htmlTemplatesTask)
+
+
+
+var htmlTask = function (cb) {
+  gulpSequence('markdown', 'html-templates', cb)
+}
+gulp.task('html', htmlTask)
