@@ -27,7 +27,7 @@
     },
 
     "html": {
-      "src": "html",
+      "src": "/html",
       "dest": "./",
       "dataSrc": "html/_data",
       "dataGlobal": "global.json",
